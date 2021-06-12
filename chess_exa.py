@@ -35,23 +35,37 @@ while True:
 
                     audio = r.listen(source)
 
-                text = r.recognize_google(audio)
-                print("you said ",text)
+                try:
+                    text = r.recognize_google(audio)
+                except:
+                    engine.say("Sorry! Could not recognize your voice. Please try again")
+                    engine.runAndWait()
+                    text = ""
 
-                for keyword in keydict.keydict:
-                    if keyword in text:
-                        sayText, image = keydict.keydict[keyword]
-                        image = pg.image.load("images/" + image)
-                        screen.blit(image,(190,125))
+                
+                if len(text) != 0:
+                    print("you said ",text)
 
-                        pg.display.update()
+                    found = False
+                    for keyword in keydict.keydict:
+                        if keyword in text:
+                            found = True
+                            sayText, image = keydict.keydict[keyword]
+                            image = pg.image.load("images/" + image)
+                            screen.blit(image,(190,125))
 
-                        engine.say(sayText)
+                            pg.display.update()
+
+                            engine.say(sayText)
+                            engine.runAndWait()
+
+                                  
+                        if text == "home":
+                            screen.blit(background_img,(0,0))
+                    
+                    if found == False:
+                        engine.say("Sorry! Could not find infomation about your topic")
                         engine.runAndWait()
 
-                              
-                    if text == "home":
-                        screen.blit(background_img,(0,0))
-                
 
     pg.display.update()
