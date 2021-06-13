@@ -7,6 +7,7 @@ import pygame as pg
 import speech_recognition as sr
 import pyttsx3
 import keydict
+import sys
 
 pg.init()
 
@@ -61,7 +62,11 @@ while True:
 
                                   
                         if text == "exit":
-                           engine.say("Ok bye thank you!!")                    
+                           engine.say("Ok bye thank you!!") 
+                           engine.runAndWait()
+                           pg.quit()
+                           sys.exit()
+                           quit()
                     if found == False:
                         engine.say("Sorry! Could not find infomation about your topic")
                         engine.runAndWait()
