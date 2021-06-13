@@ -1,8 +1,8 @@
 keydict = {"pawn":["pawn can move vertically but only one step or if the pawn isn't moved it can move 2 steps.It captures diagonally one step and if the pawn is in the opposite row in which it started the player can choose to make the pawn any other piece but not pawn itself.There are toatal of 8 pawns given to one player","pawn.png"],
 
         "queen":["the Queen can move diagonally as well as vertically, it captures anything in it's way.","queen.png"],
-        "Bishop":["The bishop can move diagonally and it captures anything in it's way.there are total of 2 bishops given to one player.The first bishop moves on only light squares and second on only dark squares","bishop.jpg"],
-        "night" :["The knight can move as shown in the picture.there are two knight given to a player.knight is ussually known for jumping pieces.","knight_moves2.png"],
+        "Bishop":["The bishop can move diagonally and it captures anything in it's way.there are total of 2 bishops given to one player The first bishop moves on only light squares and second on only dark squares","bishop.jpg"],
+        "night" :["The knight can move as shown in the picture.there are two knight given to a player knight is ussually known for jumping pieces ","knight_moves2.png"],
         "Rook": ["The rook moves vertically and captures anything in it's way.There are total 2 rooks given to a player","rook.jpg"],
         "king" : ["king is the most imporant piece because if the king has a check and it can't move or anything can't block the check the other player wins","king.jpg"],
         "world champion": ["Magnus Carlsen, in full Sven Magnus en Carlsen, (born November 30, 1990, Tonsberg, Norway), Norwegian chess player who in 2013 at age 22 became the second youngest world chess champion. Carlsen's father first taught him how to play chess when he was five years old.","magnus.jpg"],
