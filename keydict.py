@@ -12,7 +12,7 @@ keydict = {"pawn":["pawn can move vertically but only one step or if the pawn is
     "clock": ["A chess clock consists of two adjacent clocks with buttons to stop one clock while starting the other, so that the two clocks never run simultaneously.","chess_clock.jpg"],
     "set":["You can set the board as shown in the image","chess_board.png"],
     "board":["This is the chess board in the shown image","chess_board.png"],
-    "what is chess":["a board game of strategic skill for two players, played on a chequered board on which each playing piece is moved according to precise rules. The object is to put the opponent's king under a direct attack from which escape is impossible ( checkmate ).","chess_board.py"],
+    "what is chess":["a board game of strategic skill for two players, played on a chequered board on which each playing piece is moved according to precise rules. The object is to put the opponent's king under a direct attack from which escape is impossible ( checkmate ).","chess_board.png"],
     
     }
 
