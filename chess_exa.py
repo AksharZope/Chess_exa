@@ -60,9 +60,8 @@ while True:
                             engine.runAndWait()
 
                                   
-                        if text == "home":
-                            screen.blit(background_img,(0,0))
-                    
+                        if text == "exit":
+                           engine.say("Ok bye thank you!!")                    
                     if found == False:
                         engine.say("Sorry! Could not find infomation about your topic")
                         engine.runAndWait()
